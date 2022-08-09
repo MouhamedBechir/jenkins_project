@@ -7,6 +7,7 @@ pipeline{
                 sh '''
                     ansible --version
                     ansible-playbook --version
+                    ansible all -m ping 
                 '''
         }
         }
