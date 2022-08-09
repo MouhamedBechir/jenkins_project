@@ -7,7 +7,7 @@ pipeline{
                 sh '''
                     ansible --version
                     ansible-playbook --version
-                    ansible all -m ping 
+                    ansible 192.168.1.22 -m ping 
                 '''
         }
         }
