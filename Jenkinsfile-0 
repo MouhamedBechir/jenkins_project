@@ -1,0 +1,13 @@
+pipeline{
+    agent{ label 'linux'}
+
+    stages('Hello'){
+        steps{
+            sh '''
+                ansible --version
+                ansible-playbook --version
+
+            '''
+        }
+    }
+}
